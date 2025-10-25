@@ -35,8 +35,8 @@ int Biblioteca::direccion(const libro& Libro) const {
     return -1;
 }
 
-void Biblioteca::mostrar() const {                                           //para imprimir los datos de la biblioteca para mostrar
-    for (int i = 0; i < libros.size(); i++) {
+void Biblioteca::mostrar() const {                                           //para imprimir los datos de la biblioteca para mostrarles a nuestros usuarios las opciones de libros que tienen
+    for (int i = 0; i < libros.size(); i++) {                                                                                                                           
         cout << "Estante " << i + 1 << ": ";
         vector<string> datos = libros[i].glibro();
         for (int j = 0; j < datos.size(); j++) {
