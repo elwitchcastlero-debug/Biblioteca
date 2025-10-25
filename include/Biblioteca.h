@@ -8,7 +8,7 @@ using namespace std;
 class Biblioteca {
     vector<libro> libros;
 
-public:
+public:                                                   //solo aqui se define la clase Biblioteca junto a su variable libros  y su constructor y metodos
     Biblioteca(vector<libro> ls = {}) : libros(ls) {}
 
     void agregar(const libro& Libro);
