@@ -24,9 +24,9 @@ string getTitulo() const{          //el objetivo de este metodo solo es devolver
 string getAutor() const{           //este metodo funciona igual que el anterior pero con la variable de autor
     return autor;                  //esto se hace para poder realizar la busqueda de libros por autor
 }
-string getisbn_sn()const{
-    return isbn_sn;
-}
+string getisbn_sn()const{          //este metodo es para devolver el valor de isbn_sn
+    return isbn_sn;                //lo necesitamos para realizar la busqueda de libros en la biblioteca al este un valor unico 
+}                                  //de cada libro, es el diferenciador de un libro de los demas
 bool estaDisponible() const {      //para retornar el valor booleano de la disponibilidad del libro
     return disponibilidad; }       //se hace para saber si se puede prestar un libro existente en la biblioteca
 void setDisponibilidad(bool estado) {     //este es necesario para cuando se presta un libro indicar que ya no está disponible al ya ser prestado
